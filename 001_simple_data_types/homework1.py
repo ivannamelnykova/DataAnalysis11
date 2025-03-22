@@ -29,3 +29,20 @@ user_surname = 'Smith'
 # code 2 data
 x = 152
 y = 132
+
+age = current_year - year_of_birth
+
+# code_2 = x % y
+# code_2 = code_2 * 13
+# code_2 = code_2 ** 0.5
+# code_2 = int(code_2)
+
+# QUICK COMMENT (CTRL + /)
+
+code_2 = int((x % y * 13) ** 0.5)
+code_2 = str(code_2)
+
+code = code_1 + '-' + code_2 + '-' + str(code_3)
+
+print('Hello ' + user_name + ' ' + user_surname + '. You are ' +
+      str(age) + ' years old. Your secret code is ' + code + '.')
