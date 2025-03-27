@@ -30,7 +30,7 @@ print(unique_students)
 # Task 5
 numbersA = (23, 52, 12, 75, 42)
 numbersB = (75, 22, 42, 94, 70)
-common_elements = set(numbersA) and set(numbersB)
+common_elements = set(numbersA).intersection(set(numbersB))
 print(common_elements)
 
 # Task 6
