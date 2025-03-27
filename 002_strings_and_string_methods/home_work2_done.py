@@ -9,10 +9,16 @@ example_string2 = "jack Is My NAME"
 example_string2_res = example_string2[0].upper() + example_string2[1:].lower()
 print(example_string2_res)
 
+print(example_string2.capitalize())
+
 # Task 3
 example_string3 = "%-*Get rid of *junk* please*-L%*"
 print(len(example_string3))
 print(example_string3[3:14], example_string3[15:19], example_string3[21:27])
+
+print(example_string3.strip('%-*L').replace('*', ''))
+
+print(example_string3.replace('%', '').replace('-', ''))
 
 # Task 4
 example_string4 = "hello my name is jack"
@@ -22,6 +28,7 @@ example_string4_res = (example_string4[0].upper() + example_string4[1:17] + exam
 print(example_string4_res)
 
 print(example_string4[:-4].capitalize() + example_string4[-4:].capitalize())
+print(example_string4.capitalize().replace('jack', 'Jack'))
 
 
 # Task 5
@@ -44,9 +51,16 @@ print(first_word)
 print(second_word)
 print(third_word)
 
+print(example_string5.lower().count('Estonia'))
+print(example_string5.upper().count('Estonia'))
+print(example_string5.title().count('Estonia'))
+
 #Task 6
 var1 = "jack"
 var2 = "hello"
 var3 = "MY NAME IS"
 print(f'{var2.capitalize()}, {var3.lower()} {var1.capitalize()}')
+
+print(f'{var2.title()}), {var3.lower()} {var1.title()}')
+
 
