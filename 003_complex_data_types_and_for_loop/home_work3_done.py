@@ -35,14 +35,11 @@ print(common_elements)
 
 # Task 6
 a = (1, 2, 3, 4, 6, 7, 8)
-# print(a[1:3] + (5))
+res = tuple(a[:4] + tuple([5]) + a[4:])
+print(res)
 
 tup1 = list(a)
 tup1.insert(4, 5)
-a=tuple(tup1)
-print(tup1)
+res2=tuple(tup1)
+print(res2)
 
-
-
-# tup1 = (1, 2, 3, 4, 5, 6)
-# print(tup1[2:5] +(1, 23, 43))
