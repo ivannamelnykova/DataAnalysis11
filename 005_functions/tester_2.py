@@ -130,3 +130,31 @@ from helpers_2 import *
 
 print(triple(123))
 print(quadruple(123))
+
+
+########
+def simple(start, middle, end):
+    return sum([start, middle, end]) / 3
+
+print(simple(5, 6, 10))
+
+
+def average(lst):
+    return sum(lst) / len(lst)
+
+x = average([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+print(x)
+
+
+def average2(lst):
+    s = 0
+    n = 0
+    for i in range(len(lst)):
+        s = s + lst[i]
+        n = n + 1
+
+    return s / n
+
+
+print(average2([1, 2, 43, 54, 55]))
+

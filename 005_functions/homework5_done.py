@@ -39,3 +39,17 @@ def largest(lst):
 
 print(largest([1, 5, 10, 3, -1]))
 print(largest([]))
+
+# Task 4
+def fizz_buzz(start, end):
+    for num in range(start, end + 1):
+        if num % 3 == 0 and num % 5 == 0:
+            print(num, 'FIZZBUZZ')
+        elif num % 3 == 0:
+            print(num, 'FIZZ')
+        elif num % 5 == 0:
+            print(num, 'BUZZ')
+
+fizz_buzz(1, 100)
+
+
